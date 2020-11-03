@@ -1,0 +1,28 @@
+[20-Oct-2020 13:38:55 UTC] PHP Warning:  include(../api/database.php): failed to open stream: No such file or directory in /home/plustori/public_html/googlelogin/gauth.php on line 3
+[20-Oct-2020 13:38:55 UTC] PHP Warning:  include(../api/database.php): failed to open stream: No such file or directory in /home/plustori/public_html/googlelogin/gauth.php on line 3
+[20-Oct-2020 13:38:55 UTC] PHP Warning:  include(): Failed opening '../api/database.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/plustori/public_html/googlelogin/gauth.php on line 3
+[20-Oct-2020 13:38:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/plustori/public_html/googlelogin/gauth.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/plustori/public_html/googlelogin/gauth.php on line 33
+[28-Oct-2020 21:19:07 UTC] PHP Warning:  file_get_contents(http://ipinfo.io/'..'/json): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/plustori/public_html/googlelogin/google_check.php on line 26
+[28-Oct-2020 21:19:46 UTC] PHP Warning:  file_get_contents(http://ipinfo.io/'..'/json): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/plustori/public_html/googlelogin/google_check.php on line 26
+[28-Oct-2020 21:22:04 UTC] PHP Warning:  file_get_contents(http://ipinfo.io/'..'/json): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/plustori/public_html/googlelogin/google_check.php on line 26
+[28-Oct-2020 21:25:08 UTC] PHP Warning:  file_get_contents(http://ipinfo.io//json): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/plustori/public_html/googlelogin/google_check.php on line 26
+[28-Oct-2020 21:25:52 UTC] PHP Warning:  file_get_contents(http://ipinfo.io//json): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/plustori/public_html/googlelogin/google_check.php on line 26
+[29-Oct-2020 21:57:19 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://oauth2.googleapis.com/token` resulted in a `400 Bad Request` response:
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}
+ in /home/plustori/public_html/googlelogin/google/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/plustori/public_html/googlelogin/google/vendor/guzzlehttp/guzzle/src/Middleware.php(66): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 /home/plustori/public_html/googlelogin/google/vendor/guzzlehttp/promises/src/Promise.php(203): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/plustori/public_html/googlelogin/google/vendor/guzzlehttp/promises/src/Promise.php(156): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), Array)
+#3 /home/plustori/public_html/googlelogin/google/vendor/guzzlehttp/promises/src/TaskQueue.php(47): GuzzleHttp\Pro in /home/plustori/public_html/googlelogin/google/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
